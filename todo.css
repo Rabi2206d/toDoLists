@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', cursive;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+}
+.container
+{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+.newtask{
+    height: 80px;
+    position: relative;
+    background: #ffffff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.newtask input {
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.newtask input:focus{
+    outline: none;
+    border: 2px solid  rgb(119, 119, 233);
+}
+.newtask button{
+    position: relative;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    background: rgb(119, 119, 233);
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;   
+    cursor: pointer;
+}
+.tasks{
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 60px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    width: 100%;
+    position: relative;
+}
+
+#tasks{
+    background: white;
+    padding: 5px 10px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+#tasks span{
+    font-size: 15px;
+    font-weight: 400;
+}
+#tasks button{
+    background:  rgb(119, 119, 233) ;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.Completed{
+    text-decoration: line-through;
+}
+
+
+h1{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 400;
+}
